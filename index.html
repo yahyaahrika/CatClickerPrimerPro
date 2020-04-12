@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  margin: 5px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+<head>
+	<title>2 Cats Count Click Appred the test</title>
+</head>
+<body style="display: inline-flex;">
+
+    <table id="listCats">
+      <thead>
+        <td>N</td>
+        <td>Cat Name</td>
+      </thead>
+
+      <tbody>
+     
+      </tbody>
+    </table>
+
+    <div id="DetaisCat" class="Detais" style="display: none;float: right;margin-left: 30%;">
+      <ul>
+       ID: <li id="idCat"></li>
+        <li id="namecat">Name : </li>
+        click:   <li id="idcount"></li>
+        <li><img id="catImg" src="#" width="300px" height="200px" alt=""></li>
+       
+      </ul>
+      <button id="btnisAdmin">Admin</button>
+      <div id="formadmin" style="display: none;">
+        <form  action="post" >
+          Name <input id="editName" type="text"><br>
+          ImageUrl <input id="editImage" type="text"><br>
+          Click <input id="editClick" type="text"><br>
+          <button id="submit" onclick="return false;"> Save</button>
+          <button id="cancel" type="reset"> Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</html>
